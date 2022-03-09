@@ -5,6 +5,8 @@ import { HomePageModule } from './pages/home.page-module';
 import { TeamPageModule } from './pages/team.page-module';
 import { RealizationsPageModule } from './pages/realizations.page-module';
 import { TechnologyPageModule } from './pages/technology.page-module';
+import { Technology1PageModule } from './pages/technology1.page-module';
+import { Technology2PageModule } from './pages/technology2.page-module';
 
 const routes: Routes = [{ 
         path: 'onass', 
@@ -21,6 +23,14 @@ const routes: Routes = [{
   { 
         path: 'technologia', 
         loadChildren: () => TechnologyPageModule
+      },
+  { 
+        path: 'technology1', 
+        loadChildren: () => Technology1PageModule
+      },
+  { 
+        path: 'technology2', 
+        loadChildren: () => Technology2PageModule
       }
 ];
 
