@@ -3,3 +3,5 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/
 @Component({ selector: 'lib-team-page', templateUrl: './team.page.html', encapsulation: ViewEncapsulation.None, changeDetection: ChangeDetectionStrategy.OnPush })
 export class TeamPage {
 }
+
+
