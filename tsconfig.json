@@ -15,7 +15,17 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "team": [
+        "dist/team/team",
+        "dist/team"
+      ],
+      "teamtest": [
+        "dist/teamtest/teamtest",
+        "dist/teamtest"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false
