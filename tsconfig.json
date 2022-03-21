@@ -17,6 +17,14 @@
       "dom"
     ],
     "paths": {
+      "messages": [
+        "dist/messages/messages",
+        "dist/messages"
+      ],
+      "ourteam": [
+        "dist/ourteam/ourteam",
+        "dist/ourteam"
+      ],
       "team": [
         "dist/team/team",
         "dist/team"

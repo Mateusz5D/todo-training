@@ -202,6 +202,86 @@
           }
         }
       }
+    },
+    "messages": {
+      "projectType": "library",
+      "root": "projects/messages",
+      "sourceRoot": "projects/messages/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/messages/tsconfig.lib.json",
+            "project": "projects/messages/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/messages/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/messages/src/test.ts",
+            "tsConfig": "projects/messages/tsconfig.spec.json",
+            "karmaConfig": "projects/messages/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/messages/tsconfig.lib.json",
+              "projects/messages/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ourteam": {
+      "projectType": "library",
+      "root": "projects/ourteam",
+      "sourceRoot": "projects/ourteam/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ourteam/tsconfig.lib.json",
+            "project": "projects/ourteam/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ourteam/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ourteam/src/test.ts",
+            "tsConfig": "projects/ourteam/tsconfig.spec.json",
+            "karmaConfig": "projects/ourteam/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ourteam/tsconfig.lib.json",
+              "projects/ourteam/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "todo-training"
